@@ -3,6 +3,7 @@ package puzzleN;
 import java.util.Calendar;
 
 public class Puzzle {
+	
 	private Jogador jogador;
 	private Tabuleiro gridPuzzle;
 	private int quantidadeMovimento;
@@ -10,12 +11,14 @@ public class Puzzle {
 	private boolean venceu;
 	private Calendar tempo;
 	private Dificuldade dificuldade;
-
+	
+	//construtor que inicializa com o nome e dificuldade
 	public Puzzle(Jogador jogador, Dificuldade dificuldade) {
 		this.jogador = jogador;
 		this.dificuldade = dificuldade;
 	}
-
+	
+	//metodo que vai saber se 
 	public boolean isFimDeJogo() {
 		return this.gridPuzzle.isTabuleiroOrdenado();
 	}
@@ -24,7 +27,8 @@ public class Puzzle {
 		this.quantidadeMovimento = 0;
 		this.tempo = Calendar.getInstance();
 		this.venceu = false;
-		this.gridPuzzle = new Tabuleiro(this.dificuldade);
+		this.gridPuzzle.geraTabuleiro(this.dificuldade);
+		//this.gridPuzzle = new Tabuleiro(this.dificuldade);
 	}
 
 	public Jogador getJogador() {
