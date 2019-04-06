@@ -148,9 +148,10 @@ public class Tabuleiro {
 
 	public void geraTabuleiro(Dificuldade dificuldade) {
 	}
-
-	public Bloco[][] getGrid() {
-		return grid;
+	
+	//nao sei se pode fazer isso
+	public Bloco getGrid(int i,int j) {
+		return this.grid[i][j];
 	}
 
 	public void setGrid(Bloco[][] grid) {
