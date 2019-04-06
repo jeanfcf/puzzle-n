@@ -7,7 +7,11 @@ public class Main {
 		Jogador jogador = new Jogador("jogador");
 		//cria um puzzle iniciando com o nome do jogador e a dificuldade facil
 		Puzzle teste = new Puzzle(jogador, Dificuldade.FACIL);
-		
+		//cria e instancia um tabuleiro para teste, já que não foi pedido isso no
+		//pdf
+		Tabuleiro teste1 = new Tabuleiro(Dificuldade.FACIL);
+		//seta o tabuleiro criado em puzzle
+		teste.setGridPuzzle(teste1);
 		//inicia a partida
 		teste.iniciaPartida();
 		//verifica se está ordenado
