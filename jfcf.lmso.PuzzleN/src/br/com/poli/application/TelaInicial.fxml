@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="telaInicial" prefHeight="300.0" prefWidth="400.0" style="-fx-background-image: url(images/wraith.jpg);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.poli.application.Controlador">
+   <children>
+      <AnchorPane layoutX="200.0" prefHeight="300.0" prefWidth="200.0" style="-fx-background-image: url(images/space.png);">
+         <children>
+            <Button fx:id="bIniciar" layoutX="64.0" layoutY="138.0" mnemonicParsing="false" onAction="#aBtIniciar" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #1d1d1d;" text="INICIAR" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="bRanking" layoutX="57.0" layoutY="186.0" mnemonicParsing="false" onAction="#aBtRanking" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: #1d1d1d;" text="RANKING" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="bSair" layoutX="69.0" layoutY="232.0" mnemonicParsing="false" onAction="#aBtSair" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #1d1d1d;" text="SAIR" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="115.0" fitWidth="214.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/design.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

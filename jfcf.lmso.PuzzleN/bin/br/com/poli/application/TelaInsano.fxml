@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="telaInsano" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" style="-fx-background-image: url(images/space.png);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.poli.application.Controlador">
+   <children>
+      <Button fx:id="bDireita" disable="true" layoutX="125.0" layoutY="125.0" mnemonicParsing="false" onAction="#aBDireita" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #1d1d1d; -fx-border-color: white; -fx-border-insets: 2; -fx-border-radius: 1;" text="→" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="bEsquerda" disable="true" layoutX="225.0" layoutY="125.0" mnemonicParsing="false" onAction="#aBEsquerda" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #1d1d1d; -fx-border-color: white; -fx-border-radius: 1; -fx-border-insets: 2;" text="←" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="bCima" disable="true" layoutX="175.0" layoutY="175.0" mnemonicParsing="false" onAction="#aBCima" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #1d1d1d; -fx-border-color: white; -fx-border-insets: 2; -fx-border-radius: 1;" text="↑" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="bBaixo" disable="true" layoutX="175.0" layoutY="75.0" mnemonicParsing="false" onAction="#aBBaixo" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #1d1d1d; -fx-border-color: white; -fx-border-insets: 2; -fx-border-radius: 1;" text="↓" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="184.0" layoutY="114.0" prefWidth="33.0" text="0">
+         <font>
+            <Font name="Arial Black" size="49.0" />
+         </font>
+      </Label>
+      <Button fx:id="bInicioDePartida" layoutX="133.0" layoutY="34.0" mnemonicParsing="false" onAction="#aBtInicioDePartida" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: #1d1d1d;" text="INICIAR PARTIDA" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="labelNome" layoutX="6.0" layoutY="3.0" prefHeight="17.0" prefWidth="217.0" style="-fx-background-color: #1d1d1d;" text="JOGADOR:" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

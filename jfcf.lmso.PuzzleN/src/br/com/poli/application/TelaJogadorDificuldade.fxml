@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="telaJogadorDificuldade" prefHeight="300.0" prefWidth="400.0" style="-fx-background-image: url(images/space.png);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.poli.application.Controlador">
+   <children>
+      <Button fx:id="bContinuar" layoutX="272.0" layoutY="241.0" mnemonicParsing="false" onAction="#aBtContinuar" style="-fx-background-color: #1d1d1d;" text="CONTINUAR" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="133.0" layoutY="55.0" prefHeight="17.0" prefWidth="129.0" text="DIGITE SEU NOME:" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></Label>
+      <MenuButton fx:id="menuDificuldade" alignment="CENTER" layoutX="123.0" layoutY="125.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #1d1d1d;" text="DIFICULDADE" textFill="WHITE">
+        <items>
+          <MenuItem fx:id="menuItemFacil" mnemonicParsing="false" onAction="#aMiFacil" text="FÁCIL" />
+          <MenuItem fx:id="menuItemMedio" mnemonicParsing="false" onAction="#aMiMedio" text="MÉDIO" />
+            <MenuItem fx:id="menuItemDificil" mnemonicParsing="false" onAction="#aMiDificil" text="DIFÍCIL" />
+            <MenuItem fx:id="menuItemInsano" mnemonicParsing="false" onAction="#aMiInsano" text="INSANO" />
+        </items>
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </MenuButton>
+      <TextField fx:id="txtNome" layoutX="123.0" layoutY="72.0" opacity="0.84" promptText="ATÉ 10 LETRAS" style="-fx-background-color: #000000;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Button fx:id="bVoltar" layoutX="44.0" layoutY="241.0" mnemonicParsing="false" onAction="#aBtVoltar" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: #1d1d1d;" text="VOLTAR" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>
